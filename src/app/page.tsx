@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 
 export default function Home() {
-  const [userInput, setUserInput] = useState<string>("");
+  const [userInput] = useState<string>("");
   const [llmResponse, setLlmResponse] = useState<string>("");
   const [audioUrl, setAudioUrl] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
